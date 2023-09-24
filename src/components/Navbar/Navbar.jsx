@@ -4,26 +4,26 @@ import "./Navbar.css";
 const Navbar = () => {
     return (
         <div className="max-w-7xl mx-auto">
-            <div className="navbar ">
+            <nav className="navbar ">
                 <div className="flex-1">
                     <img src={logo} alt="NavLogo" />
                 </div>
                 <div className="flex-none">
                     <ul className=" menu-horizontal px-1">
-                        <li className=" text-[#0B0B0B] mr-8">
+                        <li className=" text-[#0B0B0B]  mr-8">
                             <NavLink to="/">Home</NavLink>
                         </li>
 
                         <li className=" text-[#0B0B0B] mr-8">
-                            <NavLink to="/">Donation</NavLink>
+                            <NavLink to="/donation">Donation</NavLink>
                         </li>
 
                         <li className=" text-[#0B0B0B] mr-8">
-                            <NavLink to="/">Statistics</NavLink>
+                            <NavLink to="/statistics">Statistics</NavLink>
                         </li>
                     </ul>
                 </div>
-            </div>
+            </nav>
         </div>
     );
 };

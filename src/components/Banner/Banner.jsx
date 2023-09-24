@@ -19,7 +19,7 @@ const Banner = () => {
                     </div>
                     <div className="flex justify-center mt-8">
                         <input
-                            className="bg-white border-[#DEDEDE] border-2 pl-4 pr-40 rounded-l-lg"
+                            className="bg-white border-[#DEDEDE] border-2 border-r-0 pl-4 pr-40 rounded-l-lg"
                             type="text"
                             placeholder="Search here...."
                         />
