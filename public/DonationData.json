@@ -1,0 +1,122 @@
+[
+    {
+        "picture": "https://i.ibb.co/KhyRSqp/Health.png",
+        "title": "Clean water for children",
+        "category": "Health",
+        "category_bg_color": "#0052FF33",
+        "card_bg_color": "#0052FF26",
+        "text_button_bg": "#0052FF",
+        "description": "Ensuring access to quality healthcare is paramount to a healthy society. Governments can invest in healthcare infrastructure, provide affordable healthcare services, and promote health education. Individuals can take charge of their health by adopting a balanced lifestyle, regular exercise, and preventive care. Healthcare professionals can contribute by offering compassionate and skilled medical services, focusing on both treatment and prevention.",
+        "price": 290.0
+    },
+    {
+        "picture": "https://i.ibb.co/wdRpxY8/Education.png",
+        "title": "Product 2",
+        "category": "Good Education",
+        "category_bg_color": "#FF443333",
+        "card_bg_color": "#FF444A26",
+        "text_button_bg": "#FF444A",
+        "description": "There are many things that can be done to ensure that all people have access to a good education. Governments can invest in public schools, provide financial assistance to students, and make sure that all schools have qualified teachers and resources. Families can support their children's education by creating a learning environment at home and helping them with their schoolwork. Teachers can create a positive and supportive learning environment for their students and challenge them to reach their full potential.",
+        "price": 290.0
+    },
+    {
+        "picture": "https://i.ibb.co/xf0wM9d/Clothing.png",
+        "title": "Used Clothing Drive",
+        "category": "Clothing",
+        "category_bg_color": "#79C23333",
+        "card_bg_color": "#79C23F26",
+        "text_button_bg": "#79C23F",
+        "description": "Access to clothing is a basic necessity that can be improved through various means. Governments can support the textile industry, create job opportunities, and ensure fair labor practices. Charities and community organizations can organize clothing drives and provide assistance to those in need. Individuals can contribute by donating clothing, promoting sustainable fashion choices, and supporting ethical clothing brands.",
+        "price": 290.0
+    },
+    {
+        "picture": "https://i.ibb.co/Hp9yx9b/Food.png",
+        "title": "Better Food for Everyone",
+        "category": "Food",
+        "category_bg_color": "#F8713333",
+        "card_bg_color": "#F8714726",
+        "text_button_bg": "#F87147",
+        "description": "Access to nutritious and affordable food is essential for overall well-being. Governments can invest in agricultural development, promote sustainable farming practices, and subsidize food for low-income families. Communities can establish food banks and community gardens to address food insecurity locally. Individuals can reduce food waste, support local farmers' markets, and advocate for food policies that prioritize affordability and nutrition. Together, we can work towards a world where everyone has access to an adequate and healthy food supply.",
+        "price": 290.0
+    },
+    {
+        "picture": "https://i.ibb.co/Hp9yx9b/Food.png",
+        "title": "Better Food for Everyone",
+        "category": "Food",
+        "category_bg_color": "#F8713333",
+        "card_bg_color": "#F8714726",
+        "text_button_bg": "#F87147",
+        "description": "Access to nutritious and affordable food is essential for overall well-being. Governments can invest in agricultural development, promote sustainable farming practices, and subsidize food for low-income families. Communities can establish food banks and community gardens to address food insecurity locally. Individuals can reduce food waste, support local farmers' markets, and advocate for food policies that prioritize affordability and nutrition. Together, we can work towards a world where everyone has access to an adequate and healthy food supply.",
+        "price": 290.0
+    },
+    {
+        "picture": "https://i.ibb.co/xf0wM9d/Clothing.png",
+        "title": "Used Clothing Drive",
+        "category": "Clothing",
+        "category_bg_color": "#79C23333",
+        "card_bg_color": "#79C23F26",
+        "text_button_bg": "#79C23F",
+        "description": "Access to clothing is a basic necessity that can be improved through various means. Governments can support the textile industry, create job opportunities, and ensure fair labor practices. Charities and community organizations can organize clothing drives and provide assistance to those in need. Individuals can contribute by donating clothing, promoting sustainable fashion choices, and supporting ethical clothing brands.",
+        "price": 290.0
+    },
+    {
+        "picture": "https://i.ibb.co/wdRpxY8/Education.png",
+        "title": "Product 2",
+        "category": "Good Education",
+        "category_bg_color": "#FF443333",
+        "card_bg_color": "#FF444A26",
+        "text_button_bg": "#FF444A",
+        "description": "There are many things that can be done to ensure that all people have access to a good education. Governments can invest in public schools, provide financial assistance to students, and make sure that all schools have qualified teachers and resources. Families can support their children's education by creating a learning environment at home and helping them with their schoolwork. Teachers can create a positive and supportive learning environment for their students and challenge them to reach their full potential.",
+        "price": 290.0
+    },
+    {
+        "picture": "https://i.ibb.co/KhyRSqp/Health.png",
+        "title": "Clean water for children",
+        "category": "Health",
+        "category_bg_color": "#0052FF33",
+        "card_bg_color": "#0052FF26",
+        "text_button_bg": "#0052FF",
+        "description": "Ensuring access to quality healthcare is paramount to a healthy society. Governments can invest in healthcare infrastructure, provide affordable healthcare services, and promote health education. Individuals can take charge of their health by adopting a balanced lifestyle, regular exercise, and preventive care. Healthcare professionals can contribute by offering compassionate and skilled medical services, focusing on both treatment and prevention.",
+        "price": 290.0
+    },
+    {
+        "picture": "https://i.ibb.co/KhyRSqp/Health.png",
+        "title": "Clean water for children",
+        "category": "Health",
+        "category_bg_color": "#0052FF33",
+        "card_bg_color": "#0052FF26",
+        "text_button_bg": "#0052FF",
+        "description": "Ensuring access to quality healthcare is paramount to a healthy society. Governments can invest in healthcare infrastructure, provide affordable healthcare services, and promote health education. Individuals can take charge of their health by adopting a balanced lifestyle, regular exercise, and preventive care. Healthcare professionals can contribute by offering compassionate and skilled medical services, focusing on both treatment and prevention.",
+        "price": 290.0
+    },
+    {
+        "picture": "https://i.ibb.co/wdRpxY8/Education.png",
+        "title": "Product 2",
+        "category": "Good Education",
+        "category_bg_color": "#FF443333",
+        "card_bg_color": "#FF444A26",
+        "text_button_bg": "#FF444A",
+        "description": "There are many things that can be done to ensure that all people have access to a good education. Governments can invest in public schools, provide financial assistance to students, and make sure that all schools have qualified teachers and resources. Families can support their children's education by creating a learning environment at home and helping them with their schoolwork. Teachers can create a positive and supportive learning environment for their students and challenge them to reach their full potential.",
+        "price": 290.0
+    },
+    {
+        "picture": "https://i.ibb.co/xf0wM9d/Clothing.png",
+        "title": "Used Clothing Drive",
+        "category": "Clothing",
+        "category_bg_color": "#79C23333",
+        "card_bg_color": "#79C23F26",
+        "text_button_bg": "#79C23F",
+        "description": "Access to clothing is a basic necessity that can be improved through various means. Governments can support the textile industry, create job opportunities, and ensure fair labor practices. Charities and community organizations can organize clothing drives and provide assistance to those in need. Individuals can contribute by donating clothing, promoting sustainable fashion choices, and supporting ethical clothing brands.",
+        "price": 290.0
+    },
+    {
+        "picture": "https://i.ibb.co/Hp9yx9b/Food.png",
+        "title": "Better Food for Everyone",
+        "category": "Food",
+        "category_bg_color": "#F8713333",
+        "card_bg_color": "#F8714726",
+        "text_button_bg": "#F87147",
+        "description": "Access to nutritious and affordable food is essential for overall well-being. Governments can invest in agricultural development, promote sustainable farming practices, and subsidize food for low-income families. Communities can establish food banks and community gardens to address food insecurity locally. Individuals can reduce food waste, support local farmers' markets, and advocate for food policies that prioritize affordability and nutrition. Together, we can work towards a world where everyone has access to an adequate and healthy food supply.",
+        "price": 290.0
+    }
+]
