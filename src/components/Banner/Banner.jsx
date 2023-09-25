@@ -22,8 +22,8 @@ const Banner = () => {
                 }}
             >
                 <div className="">
-                    <div className="flex justify-center pt-40 ">
-                        <h1 className="mb-5 text-5xl font-bold text-[#0B0B0B]">
+                    <div className="flex justify-center pt-20 md:pt-40 ">
+                        <h1 className="mb-5 text-2xl md:text-4xl lg:text-5xl font-bold text-[#0B0B0B]">
                             I Grow By Helping People In Need
                         </h1>
                     </div>
@@ -34,12 +34,12 @@ const Banner = () => {
                                 type="text"
                                 name="category"
                                 placeholder="Search here...."
-                                className="bg-white border-[#DEDEDE] border-2 border-r-0 py-4 pl-4 pr-40 rounded-l-lg"
+                                className="bg-white border-[#DEDEDE] border-2 border-r-0 py-3 md:py-4 pl-4 md:pr-40 rounded-l-lg"
                             />
                             <input
                                 type="submit"
                                 value="Search"
-                                className="px-7 py-4 bg-[#FF444A] text-white font-semibold text-lg rounded-r-lg"
+                                className="px-7 py-3 md:py-4 bg-[#FF444A] text-white font-semibold text-lg rounded-r-lg"
                             />
                         </form>
                     </div>

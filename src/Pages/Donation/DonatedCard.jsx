@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-
+import PropTypes from "prop-types";
 const DonatedCard = ({ card }) => {
     const {
         id,
@@ -29,15 +29,15 @@ const DonatedCard = ({ card }) => {
     };
 
     return (
-        <div className="rounded-lg flex gap-6" style={bgColor}>
+        <div className="rounded-lg flex flex-col lg:flex-row gap-6" style={bgColor}>
             <div>
                 <img
                     src={picture}
-                    className="h-[190px] w-[220px] rounded-l-lg"
+                    className="md:h-[220px] md:w-full lg:w-[220px] rounded-t-lg lg:rounded-l-lg lg:rounded-r-none"
                     alt="DonatedCard Thumbnail"
                 />
             </div>
-            <div className="mt-6 space-y-1">
+            <div className="mt-6 space-y-2 mx-4 my-8 md:mx-5 lg:mx-0">
                 <p className="px-3 py-1 font-semibold rounded-md max-w-fit mb-2" style={catBgColor}>
                     {category}
                 </p>
@@ -47,7 +47,7 @@ const DonatedCard = ({ card }) => {
                 </p>
                 <Link to={`/donationDetails/${id}`}>
                     <button
-                        className="text-white text-lg font-semibold px-4 py-1 rounded-md my-3"
+                        className="text-white text-lg font-semibold px-4 py-1 rounded-md mt-5"
                         style={btnBg}
                     >
                         View Details
@@ -57,5 +57,9 @@ const DonatedCard = ({ card }) => {
         </div>
     );
 };
-
+DonatedCard.propTypes = {
+    // You can declare that a prop is a specific JS primitive. By default, these
+    // are all optional.
+    card: PropTypes.object,
+};
 export default DonatedCard;

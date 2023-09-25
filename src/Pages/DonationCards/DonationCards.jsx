@@ -29,7 +29,7 @@ const DonationCards = ({ inputValue }) => {
 
     return (
         <div className="my-24">
-            <div className="grid grid-cols-4 gap-5">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mx-6 md:mx-8 lg:mx-0">
                 {displayCard.map((card) => (
                     <SingleCard key={card.id} card={card}></SingleCard>
                 ))}

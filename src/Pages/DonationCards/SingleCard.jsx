@@ -22,7 +22,7 @@ const SingleCard = ({ card }) => {
                     <figure>
                         <img
                             src={picture}
-                            className="h-[200px] w-full rounded-t-2xl"
+                            className="h-[260px] md:h-[200px] w-full rounded-t-2xl"
                             alt="Card Thumbnail"
                         />
                     </figure>
