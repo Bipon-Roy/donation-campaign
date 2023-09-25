@@ -1,13 +1,19 @@
 import { useLoaderData, useParams } from "react-router-dom";
+import { setStorageData } from "../../utility/localStorage";
+import swal from "sweetalert";
 
 const DonationDetails = () => {
     const donations = useLoaderData();
     const { id } = useParams();
-    console.log(id);
+
     const idInt = parseInt(id);
     const donation = donations.find((card) => card.id === idInt);
     const btnBg = {
         backgroundColor: donation.text_button_bg,
+    };
+    const handleDonation = () => {
+        setStorageData(idInt);
+        swal("Thanks!", "You have Donated successfully", "success");
     };
     return (
         <div className="max-w-7xl mx-auto mb-16">
@@ -32,7 +38,11 @@ const DonationDetails = () => {
             </div>
 
             <div className="absolute lg:bottom-28">
-                <button className="text-white text-xl font-semibold px-6 py-3 ml-10" style={btnBg}>
+                <button
+                    onClick={handleDonation}
+                    className="text-white text-xl font-semibold px-6 py-3 ml-10"
+                    style={btnBg}
+                >
                     Donate ${donation.price}
                 </button>
             </div>

@@ -1,4 +1,14 @@
+import { useState } from "react";
+import useInputState from "../../Hook/useInputState";
+import DonationCards from "../../Pages/DonationCards/DonationCards";
+
 const Banner = () => {
+    const [inputValue, setInputValue] = useState("all");
+    const inputState = useInputState();
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        setInputValue(inputState.value);
+    };
     return (
         <div>
             <div
@@ -18,16 +28,25 @@ const Banner = () => {
                         </h1>
                     </div>
                     <div className="flex justify-center mt-8">
-                        <input
-                            className="bg-white border-[#DEDEDE] border-2 border-r-0 pl-4 pr-40 rounded-l-lg"
-                            type="text"
-                            placeholder="Search here...."
-                        />
-                        <button className="px-7 py-4 bg-[#FF444A] text-white font-semibold text-lg rounded-r-lg">
-                            Search
-                        </button>
+                        <form onSubmit={handleSubmit}>
+                            <input
+                                {...inputState}
+                                type="text"
+                                name="category"
+                                placeholder="Search here...."
+                                className="bg-white border-[#DEDEDE] border-2 border-r-0 py-4 pl-4 pr-40 rounded-l-lg"
+                            />
+                            <input
+                                type="submit"
+                                value="Search"
+                                className="px-7 py-4 bg-[#FF444A] text-white font-semibold text-lg rounded-r-lg"
+                            />
+                        </form>
                     </div>
                 </div>
+            </div>
+            <div className="max-w-7xl mx-auto">
+                <DonationCards inputValue={inputValue}></DonationCards>
             </div>
         </div>
     );
