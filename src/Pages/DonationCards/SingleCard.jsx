@@ -20,7 +20,11 @@ const SingleCard = ({ card }) => {
             <Link to={`/donationDetails/${id}`}>
                 <div className="shadow-xl rounded-2xl" style={bgColor}>
                     <figure>
-                        <img src={picture} alt="Card Thumbnail" />
+                        <img
+                            src={picture}
+                            className="h-[200px] w-full rounded-t-2xl"
+                            alt="Card Thumbnail"
+                        />
                     </figure>
                     <div className="card-body p-5">
                         <p

@@ -24,10 +24,14 @@ const DonationDetails = () => {
                         height: "25%",
                     }}
                 ></div>
-                <img src={donation.picture} className="w-full lg:rounded-xl" alt="Card Thumbnail" />
+                <img
+                    src={donation.picture}
+                    className="w-full lg:h-[720px] lg:rounded-xl"
+                    alt="Card Thumbnail"
+                />
             </div>
 
-            <div className="absolute lg:bottom-12">
+            <div className="absolute lg:bottom-28">
                 <button className="text-white text-xl font-semibold px-6 py-3 ml-10" style={btnBg}>
                     Donate ${donation.price}
                 </button>
