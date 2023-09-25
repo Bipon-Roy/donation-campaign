@@ -1,4 +1,4 @@
-import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip, Legend } from "recharts";
+import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip, Legend, Label } from "recharts";
 import { getStorageData } from "../../utility/localStorage";
 import { useLoaderData } from "react-router-dom";
 
@@ -22,13 +22,33 @@ const Statistics = () => {
                 <h2>Pie Chart</h2>
                 <ResponsiveContainer width="100%" height={500}>
                     <PieChart>
-                        <Pie dataKey="value" data={data} cx="50%" cy="50%" fill="#8884d8">
+                        <Pie
+                            startAngle={-110}
+                            dataKey="value"
+                            data={data}
+                            cx="50%"
+                            cy="50%"
+                            labelLine={false}
+                        >
                             {data.map((entry, index) => (
                                 <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
                             ))}
+                            {data.map((entry, index) => (
+                                <Label
+                                    key={`label-${index}`}
+                                    position={
+                                        entry.name === "Your Donation" ? "centerBottom" : "inside"
+                                    }
+                                    fill="white"
+                                    dy={entry.name === "Your Donation" ? 70 : 10}
+                                    dx={entry.name === "Your Donation" ? 60 : 0}
+                                >
+                                    {`${((entry.value / totalValue) * 100).toFixed(1)}%`}
+                                </Label>
+                            ))}
                         </Pie>
                         <Tooltip
-                            formatter={(value) => `${((value / totalValue) * 100).toFixed(2)}%`}
+                            formatter={(value) => `${((value / totalValue) * 100).toFixed(1)}%`}
                         />
                         <Legend />
                     </PieChart>
