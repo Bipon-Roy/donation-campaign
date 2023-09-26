@@ -1,8 +1,13 @@
-# React + Vite
+# Donation Campaign
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Donation Campaign Project is about collection donations from users.It is built with React (Including React Router) and Tailwind.
 
-Currently, two official plugins are available:
+## Project Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+-   Displayed a variety of donation categories with details inside a card.
+-   Users can see all the specific cards according to categories by searching for the specific category name.
+-   Users can easily read about donation details based on categories by simply clicking the cards, and they can easily donate by clicking the donate button.
+
+-   Users can see their donation history on the donation page and the statistics of their donation on the statistics page. And the data will stay until the browser history is manually deleted.
+
+-   Users can navigate pages with a smooth UI experience.
