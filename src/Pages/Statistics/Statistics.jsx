@@ -18,7 +18,7 @@ const Statistics = () => {
 
     return (
         <div className="max-w-7xl mx-auto">
-            <div>
+            <div className="lg:mt-10">
                 <ResponsiveContainer width="100%" height={500}>
                     <PieChart>
                         <Pie

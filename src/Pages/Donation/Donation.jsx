@@ -29,7 +29,9 @@ const Donation = () => {
 
     return isfalse ? (
         <div className="flex justify-center items-center h-[60vh]">
-            <p className="text-4xl font-bold">No Donation History Found!!!</p>
+            <p className="text-2xl mx-3 md:mx-0 md:text-4xl font-bold text-center">
+                No Donation History Found!!!
+            </p>
         </div>
     ) : (
         <div className="max-w-7xl mx-auto">
