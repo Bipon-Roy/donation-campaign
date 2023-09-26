@@ -1,6 +1,5 @@
 import { useLoaderData, useParams } from "react-router-dom";
 import { setStorageData } from "../../utility/localStorage";
-import swal from "sweetalert";
 
 const DonationDetails = () => {
     const donations = useLoaderData();
@@ -13,7 +12,6 @@ const DonationDetails = () => {
     };
     const handleDonation = () => {
         setStorageData(idInt);
-        swal("Thanks!", "You have Donated successfully", "success");
     };
     return (
         <div className="max-w-7xl mx-auto mb-16">

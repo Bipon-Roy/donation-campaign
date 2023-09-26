@@ -9,10 +9,14 @@ const getStorageData = () => {
 const setStorageData = (id) => {
     const storedData = getStorageData();
     const exist = storedData.find((cardId) => cardId === id);
-
-    if (!exist) {
+    console.log(exist);
+    console.log(storedData);
+    if (exist) {
+        swal("Limit Exceeded!!!", "Please donate for another one", "error");
+    } else {
         storedData.push(id);
         localStorage.setItem("donation-details", JSON.stringify(storedData));
+        swal("Thanks!", "You have donated successfully", "success");
     }
 };
 
