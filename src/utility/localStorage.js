@@ -11,8 +11,6 @@ const getStorageData = () => {
 const setStorageData = (id) => {
     const storedData = getStorageData();
     const exist = storedData.find((cardId) => cardId === id);
-    console.log(exist);
-    console.log(storedData);
     if (exist) {
         swal("Limit Exceeded!!!", "Please donate for another one", "error");
     } else {

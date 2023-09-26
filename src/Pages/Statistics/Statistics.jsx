@@ -1,4 +1,4 @@
-import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip, Legend, Label } from "recharts";
+import { Chart } from "react-google-charts";
 import { getStorageData } from "../../utility/localStorage";
 import { useLoaderData } from "react-router-dom";
 
@@ -6,52 +6,45 @@ const Statistics = () => {
     const totalDonation = getStorageData();
     const allData = useLoaderData();
     const totalValue = allData.length;
+    let donatedValue = totalDonation.length;
 
-    const donatedValue = totalDonation.length;
+    if (donatedValue == 0) {
+        donatedValue = 0.001;
+    }
 
     const data = [
-        { name: "Your Donation", value: donatedValue },
-        { name: "Total Donation", value: totalValue - donatedValue },
+        ["Donation Type", "Count"],
+        ["Your Donation", donatedValue],
+        ["Total Donation", totalValue - donatedValue],
     ];
 
-    const COLORS = ["#00C49F", "#FF444A"];
+    const options = {
+        colors: ["#00C49F", "#FF444A"],
+        legend: "bottom",
+        pieSliceText: "",
+        pieSliceTextStyle: {
+            color: "white",
+            bold: true,
+        },
+        tooltip: {
+            text: "percentage",
+        },
+        slices: {
+            0: { offset: 0 },
+        },
+        pieStartAngle: 80,
+    };
 
     return (
         <div className="max-w-7xl mx-auto">
-            <div className="lg:mt-10">
-                <ResponsiveContainer width="100%" height={500}>
-                    <PieChart>
-                        <Pie
-                            startAngle={-110}
-                            dataKey="value"
-                            data={data}
-                            cx="50%"
-                            cy="50%"
-                            labelLine={false}
-                        >
-                            {data.map((entry, index) => (
-                                <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
-                            ))}
-                            {data.map((entry, index) => (
-                                <Label
-                                    key={`label-${index}`}
-                                    position={
-                                        entry.name === "Your Donation" ? "centerBottom" : "inside"
-                                    }
-                                    fill="white"
-                                    dy={entry.name === "Your Donation" ? 70 : 10}
-                                    dx={entry.name === "Your Donation" ? 60 : 0}
-                                >
-                                    {`${((entry.value / totalValue) * 100).toFixed(1)}%`}
-                                </Label>
-                            ))}
-                        </Pie>
-                        <Tooltip
-                            formatter={(value) => `${((value / totalValue) * 100).toFixed(1)}%`}
-                        />
-                        <Legend />
-                    </PieChart>
-                </ResponsiveContainer>
+            <div>
+                <Chart
+                    width={"100%"}
+                    height={"600px"}
+                    chartType="PieChart"
+                    data={data}
+                    options={options}
+                />
             </div>
         </div>
     );
