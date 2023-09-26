@@ -1,6 +1,6 @@
 # Donation Campaign
 
-Donation Campaign Project is about collection donations from users.It is built with React (Including React Router) and Tailwind.
+The Donation Campaign project is about collecting donations from users. It is built with React (including React Router) and Tailwind
 
 ## Project Features
 
