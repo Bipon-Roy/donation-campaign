@@ -35,7 +35,7 @@ const Donation = () => {
         </div>
     ) : (
         <div className="max-w-7xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-7 mt-10 md:mt-20 mx-5 lg:mx-0">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-7 mt-10 mb-6 md:mb-14 md:mt-20 mx-5 lg:mx-0">
                 {appliedDonation.slice(0, dataLength).map((donation) => (
                     <DonatedCard key={donation.id} card={donation}></DonatedCard>
                 ))}
@@ -43,7 +43,7 @@ const Donation = () => {
             <div
                 className={`${
                     appliedDonation.length <= dataLength ? "hidden" : ""
-                } flex justify-center mt-8`}
+                } flex justify-center md:mt-8 mb-10`}
             >
                 <button
                     onClick={() => setDataLength(appliedDonation.length)}

@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 
 const SingleCard = ({ card }) => {
     const { id, picture, category, title, card_bg_color, category_bg_color, text_button_bg } = card;
@@ -22,7 +23,7 @@ const SingleCard = ({ card }) => {
                     <figure>
                         <img
                             src={picture}
-                            className="h-[260px] md:h-[200px] w-full rounded-t-2xl"
+                            className="h-[260px] md:h-[320px] lg:h-[200px] w-full rounded-t-2xl"
                             alt="Card Thumbnail"
                         />
                     </figure>
@@ -44,5 +45,7 @@ const SingleCard = ({ card }) => {
         </div>
     );
 };
-
+SingleCard.propTypes = {
+    card: PropTypes.object,
+};
 export default SingleCard;

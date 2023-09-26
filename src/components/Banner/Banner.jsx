@@ -23,7 +23,7 @@ const Banner = () => {
             >
                 <div className="">
                     <div className="flex justify-center pt-20 md:pt-40 ">
-                        <h1 className="mb-5 text-2xl md:text-4xl lg:text-5xl font-bold text-[#0B0B0B]">
+                        <h1 className="mb-5 text-xl md:text-4xl lg:text-5xl font-bold text-[#0B0B0B]">
                             I Grow By Helping People In Need
                         </h1>
                     </div>
@@ -39,7 +39,7 @@ const Banner = () => {
                             <input
                                 type="submit"
                                 value="Search"
-                                className="px-7 py-3 md:py-4 bg-[#FF444A] text-white font-semibold text-lg rounded-r-lg"
+                                className="px-4 md:px-7 py-3 md:py-4 bg-[#FF444A] text-white font-semibold text-lg rounded-r-lg"
                             />
                         </form>
                     </div>

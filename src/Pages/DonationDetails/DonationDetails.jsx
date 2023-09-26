@@ -27,22 +27,22 @@ const DonationDetails = () => {
                         background: "linear-gradient(rgba(13, 14, 14, 0.5), rgba(0, 0, 0, 0.5))",
                         height: "25%",
                     }}
-                ></div>
+                >
+                    <div className="mt-6 md:mt-16">
+                        <button
+                            onClick={handleDonation}
+                            className="text-white md:text-xl font-semibold px-4 py-2 md:px-6 md:py-3 ml-10"
+                            style={btnBg}
+                        >
+                            Donate ${donation.price}
+                        </button>
+                    </div>
+                </div>
                 <img
                     src={donation.picture}
                     className="w-full h-[364px] md:h-[720px] lg:rounded-xl"
                     alt="Card Thumbnail"
                 />
-            </div>
-
-            <div className="absolute bottom-[380px] md:bottom-4 lg:bottom-28">
-                <button
-                    onClick={handleDonation}
-                    className="text-white md:text-xl font-semibold px-4 py-2 md:px-6 md:py-3 ml-10"
-                    style={btnBg}
-                >
-                    Donate ${donation.price}
-                </button>
             </div>
 
             <div className="space-y-4 mx-5 lg:mx-0">

@@ -20,8 +20,10 @@ const Statistics = () => {
 
     const options = {
         colors: ["#00C49F", "#FF444A"],
-        legend: "bottom",
-        pieSliceText: "",
+        legend: {
+            position: "bottom",
+        },
+        pieSliceText: "percentage",
         pieSliceTextStyle: {
             color: "white",
             bold: true,
@@ -29,10 +31,9 @@ const Statistics = () => {
         tooltip: {
             text: "percentage",
         },
-        slices: {
-            0: { offset: 0 },
-        },
+
         pieStartAngle: 80,
+        sliceVisibilityThreshold: 0,
     };
 
     return (
