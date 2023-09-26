@@ -1,3 +1,5 @@
+import swal from "sweetalert";
+
 const getStorageData = () => {
     const storedItem = localStorage.getItem("donation-details");
     if (storedItem) {
